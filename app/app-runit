@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec java -jar /opt/restful-chat-service-0.1.0.jar \
+  >>/var/log/app.log 2>&1

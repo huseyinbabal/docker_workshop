@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /opt/mongodb/bin/mongod --config /opt/mongodb/mongodb.conf
