@@ -20,3 +20,7 @@ Go to app folder and execute `./run.sh <consul_ip>`
 Go to haproxy folder and execute `./run.sh <consul_ip>`
 
 When you have successfully run all the containers, you can see them by `docker ps` .
+
+### See which instances regsitered it self to consul server
+
+`curl http://172.17.0.15:8500/v1/catalog/services?pretty=1`
