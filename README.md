@@ -1,4 +1,7 @@
 # docker_workshop
+
+Great thanks to [Selim Ekizoglu](https://github.com/selimekizoglu) for helping me to integrate consul with Docker
+
 Istanbul Coders Workshop for Scalable Systems with Docker and Consul. You can access presentation [here](https://docs.google.com/presentation/d/1Y0ESRVkZhS87CTHzTEdBL86jUsfvYPydEf2-uBLmFSU/edit?usp=sharing)
 
 ## Running all the system
