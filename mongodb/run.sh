@@ -7,10 +7,10 @@ sed -i "s/$OLD/$NEW/g" *
 TAG="mongodb"
 IMAGE=$(docker images | grep "$TAG" | awk '{print $3}')
 
-#if [[ -z $IMAGE ]]; then
+if [[ -z $IMAGE ]]; then
   echo "Building image"
   docker build --no-cache -t $TAG .
-#fi
+fi
 CID=$(docker run -d -p 27017:27017 --dns 127.0.0.1 $TAG)
 IP=$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' $CID)
 PORT=$(docker inspect -f '{{range $p, $conf := .NetworkSettings.Ports}}{{(index $conf 0).HostPort}}{{end}}' $CID)
