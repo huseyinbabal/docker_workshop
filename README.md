@@ -28,4 +28,4 @@ When you have successfully run all the containers, you can see them by `docker p
 
 `curl http://172.17.0.15:8500/v1/catalog/services?pretty=1`
 
-## Note: You need to use vm ip instead of the ip above. For example, if you are using boot2docker, get the ip first by using command `boot2docker ip` and than use that ip to list consul catalog
+Note: You need to use vm ip instead of the ip above. For example, if you are using boot2docker, get the ip first by using command `boot2docker ip` and than use that ip to list consul catalog
